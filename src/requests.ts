@@ -6,10 +6,10 @@ const USER_AGENT =
 const API_ROOT = 'https://time.geekbang.org';
 
 dotenv.config();
-const COOKIE = process.env.GEEKBANG_COOKIE ? process.env.GEEKBANG_COOKIE : '';
+const COOKIE = process.env.GEEKTIME_TOKEN ? process.env.GEEKTIME_TOKEN : '';
 
 if (!COOKIE) {
-    throw new Error('required `GEEKBANG_COOKIE`');
+    throw new Error('required `GEEKTIME_TOKEN`');
 }
 
 interface APIResponse {
